@@ -1,0 +1,92 @@
+
+#main {
+    float: left;
+    margin-left: 35%;
+    max-width: 54em;
+    padding: 8em 4em 4em;
+    width: calc(100% - 35%);
+}
+#header {
+    padding: 6em 3em 3em;
+    width: 30%;
+    background-image:url(images/img1.jpg), url(images/black.gif);
+    height: 100%;
+    position: fixed;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    background-attachment: scroll;
+    background-repeat:repeat,no-repeat;
+    align-items: flex-end;
+    background-size: auto auto, auto 100%;
+    background-position: left top, left top;
+    color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+}
+h2 {
+    line-height: 1.5em;
+    padding-bottom:20px; 
+    font-weight: 100;
+}
+
+
+input[type="submit"], input[type="reset"], input[type="button"], .button {
+    -moz-appearance: none;
+    background-color: transparent;
+    border: 3px solid #efefef;
+    border-radius: 0.35em;
+    color: #787878 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out 0s, color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+    white-space: nowrap;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], .button:hover {
+
+
+    border-color: #49bf9d;
+    color: #49bf9d !important;
+}
+ul.actions {
+    cursor: default;
+    list-style: outside none none;
+    padding-left: 0;
+}
+.actions{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ul.labeled-icons{
+    list-style: outside none none;
+}
+#header > .inner {
+    flex-grow: 1;
+    margin: 0 0 2em;
+}
+@media screen and (max-width: 1400px) {
+    #header {
+        width: 100%;
+        position: relative;
+    }
+    #main{
+        position: absolute;
+      
+    }
+}
+#head{
+    font-size: 20px;
+}
+.col-sm-{
+    margin-right:10px;
+}
+
